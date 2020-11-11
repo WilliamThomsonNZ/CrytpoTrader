@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="auto" height="auto" src="Logo.png">
+  <img width="auto" height="auto" src="src/imgs/cryptoLogo.png">
 </p>
 
 # CryptoTrader
