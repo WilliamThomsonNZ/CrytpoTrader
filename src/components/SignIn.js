@@ -20,6 +20,7 @@ const SignIn = () => {
         <BtnIcon src={googleIcon} />
         Sign In With Google
       </LandingBtn>
+
       <LandingBtn>
         <BtnIcon src={bitcoinIcon} />
         View Live Demo

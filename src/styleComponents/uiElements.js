@@ -59,3 +59,8 @@ export const Grid = styled.div`
   grid-template-columns: 0.2fr 0.8fr;
   height: 100%;
 `;
+
+export const DashContent = styled.main`
+  position: relative;
+  height: 100%;
+`;

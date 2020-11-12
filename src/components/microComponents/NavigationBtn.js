@@ -18,11 +18,16 @@ const NavBarIcon = styled.img`
   display: block;
 `;
 
-const NavigationBtn = ({ icon, type, passedRoute }) => {
+const NavigationBtn = ({ icon, type, signIn }) => {
   useEffect(() => {
     console.log(icon);
   }, []);
-  return (
+  return signIn ? (
+    <NavBarBtn>
+      <NavBarIcon src={icon} />
+      {type}
+    </NavBarBtn>
+  ) : (
     <NavBarBtn>
       <NavBarIcon src={icon} />
       {type}

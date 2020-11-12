@@ -1,20 +1,17 @@
 import React from "react";
 import ProfileBtn from "./microComponents/ProfileBtn";
 import YourCrypto from "./YourCrypto";
-import styled from "@emotion/styled";
+import ProfileWorth from "./microComponents/ProfileWorth";
+import { DashContent } from "../styleComponents/uiElements";
 
-const DashContent = styled.main`
-  position: relative;
-  height: 100%;
-`;
-
-const DashBoardContent = () => {
+const Portfolio = () => {
   return (
     <DashContent>
       <ProfileBtn />
+      <ProfileWorth />
       <YourCrypto />
     </DashContent>
   );
 };
 
-export default DashBoardContent;
+export default Portfolio;

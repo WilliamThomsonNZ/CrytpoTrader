@@ -5,6 +5,7 @@ import logOut from "../imgs/icons/logout.svg";
 import exchange from "../imgs/icons/exchange.svg";
 import wallet from "../imgs/icons/wallet.svg";
 import logo from "../imgs/logo.svg";
+import { Link, Redirect } from "react-router-dom";
 
 const SideBarContainer = styled.aside`
   height: 100%;
@@ -22,13 +23,13 @@ const SideBar = () => {
   return (
     <SideBarContainer>
       <SideBarLogo src={logo} />
-      <NavigationBtn
-        icon={wallet}
-        type={"Portfolio"}
-        passedRoute={"/portfolio"}
-      />
-      <NavigationBtn icon={exchange} type={"Add Coin"} passedRoute={"/add"} />
-      <NavigationBtn icon={logOut} type={"Sign Out"} passedRoute={"/signUp"} />
+      <Link to="/">
+        <NavigationBtn icon={wallet} type={"Portfolio"} signIn={false} />
+      </Link>
+      <Link to="/add-coin">
+        <NavigationBtn icon={exchange} type={"Add Coin"} signIn={false} />
+      </Link>
+      <NavigationBtn icon={logOut} type={"Sign Out"} signIn={true} />
     </SideBarContainer>
   );
 };
