@@ -53,3 +53,9 @@ export const BtnIcon = styled.img`
   top: 25%;
   left: 10%;
 `;
+
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+  height: 100%;
+`;

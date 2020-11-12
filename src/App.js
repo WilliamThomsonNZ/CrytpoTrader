@@ -6,8 +6,8 @@ import { OuterContainer } from "./styleComponents/uiElements";
 function App() {
   return (
     <OuterContainer>
-      <SignIn />
-      {/* <DashBoard /> */}
+      {/* <SignIn /> */}
+      <DashBoard />
     </OuterContainer>
   );
 }

@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "@emotion/styled";
 
 const NavBarBtn = styled.button`
+  font-size: 1.1rem;
   display: block;
   width: 80%;
-  margin: 3rem auto;
+  margin: 4rem auto;
+  border: none;
+  background: none;
+  &:hover {
+    cursor: pointer;
+  }
 `;
-const NavBarIcon = styled.div`
-  width: 70%;
+const NavBarIcon = styled.img`
+  width: 25%;
   margin: 0.5rem auto;
   display: block;
 `;
 
 const NavigationBtn = ({ icon, type, passedRoute }) => {
+  useEffect(() => {
+    console.log(icon);
+  }, []);
   return (
     <NavBarBtn>
       <NavBarIcon src={icon} />

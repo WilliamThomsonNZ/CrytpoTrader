@@ -1,10 +1,15 @@
 import React from "react";
 import SideBar from "./SideBar";
-import { Container } from "../styleComponents/uiElements";
+import DashBoardContent from "./DashBoardContent";
+import { Container, Grid } from "../styleComponents/uiElements";
+
 const Dashboard = () => {
   return (
     <Container>
-      <SideBar />
+      <Grid>
+        <SideBar />
+        <DashBoardContent />
+      </Grid>
     </Container>
   );
 };
