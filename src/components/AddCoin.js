@@ -4,6 +4,7 @@ import { DashContent } from "../styleComponents/uiElements";
 import AvailableFunds from "./microComponents/AvailableFunds";
 import ProfileBtn from "./microComponents/ProfileBtn";
 import SearchBar from "./microComponents/SearchBar";
+import SearchResult from "./microComponents/SearchResult";
 
 const AddTitle = styled.h2`
   position: absolute;
@@ -20,6 +21,7 @@ const AddCoin = () => {
       <AddTitle>Add Crypto</AddTitle>
       <AvailableFunds />
       <SearchBar />
+      <SearchResult />
     </DashContent>
   );
 };

@@ -11,7 +11,7 @@ import landingPage from "../imgs/landingImg.svg";
 import bitcoinIcon from "../imgs/bitcoin.svg";
 import googleIcon from "../imgs/google.svg";
 
-const SignIn = () => {
+const SignIn = ({ setSignedIn }) => {
   return (
     <Container>
       <Logo src={logoImg} />
@@ -21,7 +21,11 @@ const SignIn = () => {
         Sign In With Google
       </LandingBtn>
 
-      <LandingBtn>
+      <LandingBtn
+        onClick={() => {
+          setSignedIn();
+        }}
+      >
         <BtnIcon src={bitcoinIcon} />
         View Live Demo
       </LandingBtn>

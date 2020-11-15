@@ -23,13 +23,13 @@ const SideBar = () => {
   return (
     <SideBarContainer>
       <SideBarLogo src={logo} />
-      <Link to="/">
-        <NavigationBtn icon={wallet} type={"Portfolio"} signIn={false} />
+      <Link exact to="/" style={{ textDecoration: "none" }}>
+        <NavigationBtn icon={wallet} type={"Portfolio"} />
       </Link>
-      <Link to="/add-coin">
-        <NavigationBtn icon={exchange} type={"Add Coin"} signIn={false} />
+      <Link exact to="/add-crypto" style={{ textDecoration: "none" }}>
+        <NavigationBtn icon={exchange} type={"Add Crypto"} />
       </Link>
-      <NavigationBtn icon={logOut} type={"Sign Out"} signIn={true} />
+      <NavigationBtn icon={logOut} type={"Sign Out"} />
     </SideBarContainer>
   );
 };

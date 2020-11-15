@@ -64,3 +64,25 @@ export const DashContent = styled.main`
   position: relative;
   height: 100%;
 `;
+
+export const TradeButton = styled.button`
+  width: 8rem;
+  /* font-weight: bold; */
+  height: 3rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+  background: #fff;
+  border: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  color: #f9a826;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const TradeIcon = styled.img`
+  height: 40%;
+  margin-right: 0.5rem;
+  display: inline-block;
+`;

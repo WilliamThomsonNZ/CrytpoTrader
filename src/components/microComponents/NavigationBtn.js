@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "@emotion/styled";
 
 const NavBarBtn = styled.button`
@@ -18,16 +18,8 @@ const NavBarIcon = styled.img`
   display: block;
 `;
 
-const NavigationBtn = ({ icon, type, signIn }) => {
-  useEffect(() => {
-    console.log(icon);
-  }, []);
-  return signIn ? (
-    <NavBarBtn>
-      <NavBarIcon src={icon} />
-      {type}
-    </NavBarBtn>
-  ) : (
+const NavigationBtn = ({ icon, type }) => {
+  return (
     <NavBarBtn>
       <NavBarIcon src={icon} />
       {type}

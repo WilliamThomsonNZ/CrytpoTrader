@@ -13,7 +13,7 @@ const Dashboard = () => {
           <SideBar />
           <Switch>
             <Route exact path="/" component={Portfolio} />
-            <Route path="/add-coin" component={AddCoin} />
+            <Route path="/add-crypto" component={AddCoin} />
           </Switch>
         </Grid>
       </Container>
