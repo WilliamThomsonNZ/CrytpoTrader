@@ -17,9 +17,9 @@ const WorthValue = styled.h2`
 
 const ProfileWorthContainer = styled.div`
   position: absolute;
-  width: 40%;
-  left: 30%;
-  top: 13%;
+  width: 100%;
+  left: 0;
+  top: 20%;
 `;
 const ProfileWorth = ({ worth }) => {
   return (

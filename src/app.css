@@ -1,0 +1,22 @@
+.swiper-container {
+  width: 600px;
+  margin: 0 auto;
+  height: 55%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.swiper-slide {
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: grey;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black;
+}

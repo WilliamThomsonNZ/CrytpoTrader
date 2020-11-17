@@ -14,11 +14,11 @@ const data = {
 };
 
 const ChartContainer = styled.div`
-  width: 80%;
-  height: 30%;
+  width: 100%;
+  height: 50%;
   position: absolute;
-  left: 10%;
-  top: 24%;
+  left: 0;
+  top: 37%;
 `;
 const PortfolioChart = () => {
   return (

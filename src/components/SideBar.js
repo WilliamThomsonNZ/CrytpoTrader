@@ -5,7 +5,7 @@ import logOut from "../imgs/icons/logout.svg";
 import exchange from "../imgs/icons/exchange.svg";
 import wallet from "../imgs/icons/wallet.svg";
 import logo from "../imgs/logo.svg";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SideBarContainer = styled.aside`
   height: 100%;
