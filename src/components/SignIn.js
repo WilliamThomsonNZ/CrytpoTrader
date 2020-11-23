@@ -10,13 +10,14 @@ import logoImg from "../imgs/logo.svg";
 import landingPage from "../imgs/landingImg.svg";
 import bitcoinIcon from "../imgs/bitcoin.svg";
 import googleIcon from "../imgs/google.svg";
+import { signInWithGoogle } from "../firebase";
 
 const SignIn = ({ setSignedIn }) => {
   return (
     <Container>
       <Logo src={logoImg} />
       <LandingImg src={landingPage} />
-      <LandingBtn>
+      <LandingBtn onClick = {() => signInWithGoogle()}>
         <BtnIcon src={googleIcon} />
         Sign In With Google
       </LandingBtn>
